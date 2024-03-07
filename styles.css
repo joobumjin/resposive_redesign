@@ -1,0 +1,164 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo_bar{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 3vw;
+        color: white;
+        div {
+            display: inline-block;
+        }
+        #to {
+            color: rgb(0, 172, 6)
+        }
+    }
+}
+
+#event_info{
+    width: 100%;
+    height: auto;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    h2{
+        margin-bottom: 0vh;
+    }
+    a{
+        width: fit-content;
+    }
+
+}
+
+.availabilities{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.avail_card{
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+table {
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+tr{
+    height:16px
+}
+
+
+.matrix{
+    margin-top: 1.5vh;
+    display:flex;
+    flex-flow:row;
+}
+
+.date_matrix{
+    max-width:75%;
+    overflow: scroll;
+    /* box-shadow: inset  -8px 0px 6px -4px lightgray; */
+    table{
+        table-layout:fixed;
+        width: 213px;
+    }
+    td {
+        border: 1px solid rgb(190,190,190);
+        background-color: lightgrey;
+        padding: 0px 0px 0px 0px;
+        width: 40px;
+    }
+}
+
+#your_matrix{
+    .date_matrix{
+        td:hover{
+            background-color: darkgrey;
+        }
+    }
+}
+
+#samples{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    align-items: center;
+    margin-top: 1vh;
+    table{
+        table-layout:fixed;
+        margin-right: .25vw;
+    }
+    tr{
+        height: 16px;
+    }
+    td{
+        width: 40px;
+        padding: 0px 0px 0px 0px;
+    }
+    #unavail_sample{
+        td{
+            background-color: darkgrey;
+        }
+    }
+    #avail_sample{
+        margin-left: 2vw;
+        td{
+            background-color: green;
+        }
+    }   
+}
+
+.desc{
+    font-size: 10px;
+    margin-top: 1vh;
+}
+
+.times{
+    .head{
+        height:7.6px
+    }
+    td{
+        text-align: right;
+    }
+    p {
+        margin: 0px 0px 0px 0px;
+        font-size: 8pt;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #logo_bar{
+        h1{
+            text-align: center;
+        }
+    }
+    #event_info{
+        text-align: center;
+    }
+    .availabilities{
+        flex-direction: column;
+        #group{
+            padding-top: 4vh;
+        }
+    }
+    .avail_card{
+        width: 100%;
+    }    
+}

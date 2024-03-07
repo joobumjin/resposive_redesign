@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>When2Meet Demo</title>
+        <!-- import CSS styles -->
+        <link rel="stylesheet" href="styles.css" /> 
+    </head>
+
+    <body>
+        <div id="logo_bar" role="banner">
+            <h1><div>When</div><div id="to">2</div><div>Meet</div></h1>
+        </div>
+
+        <div id="event_info" role="event info">
+            <h2>Event Name</h2>
+            <div role="copy link to event"><a href="../"><p>Copy Link</p></a></div>
+            <div id="timezone_selector" role="selects timezone">
+                Select a Time Zone
+                <select role="dropdown menu to select timezone">
+                    <option>EST</option>
+                    <option>PST</option>
+                    <option>CST</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="availabilities" role="main">
+            <div id="yours" class="avail_card">
+                Your Availability
+                <div id="samples" role="visual indicators of table samples">
+                    <table id="unavail_sample"><tr><td ></td></tr></table>
+                    Unavailable
+                    <table id="avail_sample"><tr><td> </td></tr></table>
+                    Available
+                </div>
+                <div class="desc" role="describe usage">Click and drag to select availability. Scroll to see more dates</div>
+
+                <div id="your_matrix" class="matrix">
+                    <div class="times">
+                        <table>
+                            <tr class="head"></tr>
+                            <tr><td><p>9:00am</p></td></tr> <tr></tr>
+                            <tr><td><p>10:00am</p></td></tr> <tr></tr>
+                            <tr><td><p>11:00am</p></td></tr> <tr></tr>
+                            <tr><td><p>12:00pm</p></td></tr> <tr></tr>
+                            <tr><td><p>1:00pm</p></td></tr> <tr></tr>
+                            <tr><td><p>2:00pm</p></td></tr> <tr></tr>
+                            <tr><td><p>3:00pm</p></td></tr> <tr></tr>
+                            <tr><td><p>4:00pm</p></td></tr> <tr></tr>
+                            <tr><td><p>5:00pm</p></td></tr> <tr></tr>
+                            <tr><td><p>6:00pm</p></td></tr> <tr></tr>
+                        </table>
+                    </div>
+                    <div class="date_matrix">
+                        <table>
+                            <tr>
+                                <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="group" class="avail_card">
+                Group Availability
+
+                <div class="desc" role="describe usage">Click a card to see availability. Scroll to see more dates</div>
+
+                <div id="group_matrix" class="matrix">
+                    <div class="times">
+                        <table>
+                            <tr class="head"></tr>
+                            <tr><td><p>9:00am</p></td></tr> <tr></tr>
+                            <tr><td><p>10:00am</p></td></tr> <tr></tr>
+                            <tr><td><p>11:00am</p></td></tr> <tr></tr>
+                            <tr><td><p>12:00pm</p></td></tr> <tr></tr>
+                            <tr><td><p>1:00pm</p></td></tr> <tr></tr>
+                            <tr><td><p>2:00pm</p></td></tr> <tr></tr>
+                            <tr><td><p>3:00pm</p></td></tr> <tr></tr>
+                            <tr><td><p>4:00pm</p></td></tr> <tr></tr>
+                            <tr><td><p>5:00pm</p></td></tr> <tr></tr>
+                            <tr><td><p>6:00pm</p></td></tr> <tr></tr>
+                        </table>
+                    </div>
+                    <div class="date_matrix">
+                        <table>
+                            <tr>
+                                <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
