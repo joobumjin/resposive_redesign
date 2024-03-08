@@ -43,7 +43,7 @@ body {
 .availabilities{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
 }
 
 .avail_card{
@@ -76,7 +76,7 @@ td{
     }
 }
 
-#samples{
+.samples{
     display: flex;
     flex-direction: row;
     font-size: 10px;
@@ -210,6 +210,71 @@ td{
     }
 }
 
+#best{
+    width: 100%;
+    height: auto;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#best_list {
+    width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.best_card {
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 3vh;
+    table {
+        width: 30px;
+        border-collapse: collapse;
+        margin-left: 0px;
+    }
+    td {
+        background-color: #00AC06;
+    }
+}
+
+.avail_lists {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.av_list {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    h4{
+        margin-bottom: .5vh;
+    }
+    h5{
+        width: fit-content;
+        margin-bottom: .5vh;
+    }
+    p{
+        margin-bottom: .3vh;
+        font-size: 16px;
+    }
+    ul {
+        list-style-type:none;
+        padding-left: 0;
+        li {
+            margin-bottom: .5vh;
+        }
+    }
+}
 
 @media screen and (max-width: 600px) {
     #logo_bar{
@@ -229,4 +294,10 @@ td{
     .avail_card{
         width: 100%;
     }    
+    #best_list{
+        flex-flow: column wrap;
+    }
+    .best_card{
+        width: 100%
+    }
 }
