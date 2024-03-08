@@ -156,13 +156,13 @@
                                 <th>Tue</th>
                                 <th>Wed</th>
                                 <th>Thu</th>
-                                <th>Fri</th>
+                                <th role="date header: friday">Fri</th>
                             </tr>
                             <tr> <!--9am-->
-                                <td rowspan="2"><button class="event_button one"></button></td>
-                                <td rowspan="8"><button class="event_button three"></button></td>
+                                <td rowspan="2" role="1 out of 4 available: Monday 9am to 10am"><button class="event_button one">9a - 10a</button></td>
+                                <td rowspan="8" role="2 out of 4 avaialable: Tuesday 9am to 1pm"><button class="event_button three">9a - 1p</button></td>
                                 <td></td>
-                                <td rowspan="8"><button class="event_button one"></button></td>
+                                <td rowspan="8" role="1 out of 4 available: Thursday 9am to 1pm"><button class="event_button one">9a - 1p</button></td>
                                 <td></td>
                             </tr>
                             <tr>
@@ -180,23 +180,23 @@
                                 <td></td>
                             </tr>
                             <tr> <!--11 am-->
-                                <td rowspan="4"><button class="event_button two"></button></td>
-                                <td rowspan="4"><button class="event_button three"></button></td>
-                                <td class="one"></td>
+                                <td rowspan="4" role="2 out of 4 available: Monday 11am-1pm"><button class="event_button two">11a-1p</button></td>
+                                <td rowspan="4" role="3 out of 4 available: Wednesday 11am-1pm"><button class="event_button three">11a-1p</button></td>
+                                <td role="1 out of 4 available: Friday 11am-11:30am"><button class="event_button one">11a</button></td>
                             </tr>
                             <tr>
-                               <td rowspan="2"><button class="event_button two"></button></td>
+                               <td rowspan="2" role="2 out of 4 available: Friday 11:30am-12:30pm"><button class="event_button two">11:30a-12:30p</button></td>
                             </tr>
                             <tr> <!--12 pm-->
                             </tr>
                             <tr>
-                                <td class="one"></td>
+                                <td role="1 out of 4 available: Friday 12:30pm-1pm"><button class="event_button one">12:30p</button></td>
                             </tr>
                             <tr> <!--1 pm-->
                                 <td></td>
                                 <td></td>
-                                <td rowspan="1"><button class="event_button two"></button></td>
-                                <td rowspan="4"><button class="event_button two"></button></td>
+                                <td rowspan="1" role="2 out of 4 available: Wednesday 1:00pm-1:30pm"><button class="event_button two">1p</button></td>
+                                <td rowspan="4" role="2 out of 4 available: Thursday 1:00pm-3:00pm"><button class="event_button two">1p-3p</button></td>
                                 <td></td>
                             </tr>
                             <tr>
@@ -207,9 +207,9 @@
                             </tr>
                             <tr> <!--2 pm-->
                                 <td></td>
-                                <td rowspan="3"><button class="event_button two"></button></td>
+                                <td rowspan="3" role="2 out of 4 available: Tuesday 2:00pm-3:30pm"><button class="event_button two">2p-3:30p</button></td>
                                 <td></td>
-                                <td></td>
+                                <td ></td>
                             </tr>
                             <tr>
                                 <td></td>
@@ -217,8 +217,8 @@
                                 <td></td>
                             </tr>
                             <tr> <!--3 pm-->
-                                <td rowspan="4"><button class="event_button four"></button></td>
-                                <td rowspan="5"><button class="event_button two"></button></td>
+                                <td rowspan="4" role="4 out of 4 available: Monday 3:00pm-5pm"><button class="event_button four">3p-5p</button></td>
+                                <td rowspan="5" role="2 out of 4 available: Tuesday 3:00pm-5:30pm"><button class="event_button two">3p-5:30p</button></td>
                                 <td></td>
                                 <td></td>
                             </tr>
@@ -238,14 +238,15 @@
                                 <td></td>
                             </tr>
                             <tr> <!--5 pm-->
-                                <td></td><td rowspan="4"><button class="event_button four"></button></td>
-                                <td rowspan="1"><button class="event_button one"></button></td>
+                                <td></td>
+                                <td rowspan="4" role="4 out of 4 available: Tuesday 5:00pm-7:00pm"><button class="event_button four">5p-7p</button></td>
+                                <td rowspan="1" role="1 out of 4 available: Thursday 5:00pm-5:30pm"><button class="event_button one">5p</button></td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td></td>
-                                <td rowspan="3"><button class="event_button three"></button></td>
+                                <td rowspan="3" role="2 out of 4 available: Thursday 5:30pm-7:00pm"><button class="event_button three">5:30p-7p</button></td>
                                 <td></td>
                             </tr>
                             <tr> <!--6 pm-->
