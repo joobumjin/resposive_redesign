@@ -1,1 +1,0 @@
-# resposive_redesign
