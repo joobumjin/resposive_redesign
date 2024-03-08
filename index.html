@@ -14,13 +14,14 @@
 
         <div id="event_info" role="event info">
             <h2>Event Name</h2>
-            <div role="copy link to event"><a href="../"><p>Copy Link</p></a></div>
+            <div role="copy link to event"><a href=""><p>Copy Link</p></a></div>
             <div id="timezone_selector" role="selects timezone">
                 Select a Time Zone
                 <select role="dropdown menu to select timezone">
                     <option>EST</option>
-                    <option>PST</option>
                     <option>CST</option>
+                    <option>MST</option>
+                    <option>PST</option>
                 </select>
             </div>
         </div>
@@ -29,9 +30,11 @@
             <div id="yours" class="avail_card">
                 Your Availability
                 <div id="samples" role="visual indicators of table samples">
-                    <table id="unavail_sample"><tr><td ></td></tr></table>
+                    <!-- <table id="unavail_sample"><tr><td ></td></tr></table> -->
+                    <table class="unavail"><tr><td ></td></tr></table>
                     Unavailable
-                    <table id="avail_sample"><tr><td> </td></tr></table>
+                    <!-- <table id="avail_sample"><tr><td> </td></tr></table> -->
+                    <table class="avail"><tr><td> </td></tr></table>
                     Available
                 </div>
                 <div class="desc" role="describe usage">Click and drag to select availability. Scroll to see more dates</div>
@@ -54,68 +57,68 @@
                     </div>
                     <div class="date_matrix">
                         <table>
-                            <tr>
+                            <tr> <!--Header Row-->
                                 <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th>
                             </tr>
+                            <tr> <!--9am-->
+                                <td class="avail"></td><td class="avail"></td><td></td><td class="avail"></td><td></td>
+                            </tr>
                             <tr>
+                                <td class="avail"></td><td class="avail"></td><td></td><td class="avail"></td><td></td>
+                            </tr>
+                            <tr> <!--10 am-->
+                                <td></td><td class="avail"></td><td></td><td class="avail"></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td class="avail"></td><td></td><td class="avail"></td><td></td>
+                            </tr>
+                            <tr> <!--11 am-->
+                                <td class="avail"></td><td class="avail"></td><td class="avail"></td><td class="avail"></td><td class="avail"></td>
+                            </tr>
+                            <tr>
+                                <td class="avail"></td><td class="avail"></td><td class="avail"></td><td class="avail"></td><td class="avail"></td>
+                            </tr>
+                            <tr> <!--12 pm-->
+                                <td class="avail"></td><td class="avail"></td><td class="avail"></td><td class="avail"></td><td class="avail"></td>
+                            </tr>
+                            <tr>
+                                <td class="avail"></td><td class="avail"></td><td class="avail"></td><td class="avail"></td><td class="avail"></td>
+                            </tr>
+                            <tr> <!--1 pm-->
                                 <td></td><td></td><td></td><td></td><td></td>
                             </tr>
                             <tr>
                                 <td></td><td></td><td></td><td></td><td></td>
                             </tr>
-                            <tr>
+                            <tr> <!--2 pm-->
                                 <td></td><td></td><td></td><td></td><td></td>
                             </tr>
                             <tr>
                                 <td></td><td></td><td></td><td></td><td></td>
                             </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                            <tr> <!--3 pm-->
+                                <td class="avail"></td><td></td><td class="avail"></td><td></td><td></td>
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                                <td class="avail"></td><td></td><td class="avail"></td><td></td><td></td>
+                            </tr>
+                            <tr> <!--4 pm-->
+                                <td class="avail"></td><td></td><td class="avail"></td><td></td><td></td>
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                                <td class="avail"></td><td></td><td class="avail"></td><td></td><td></td>
+                            </tr>
+                            <tr> <!--5 pm-->
+                                <td></td><td class="avail"></td><td class="avail"></td><td class="avail"></td><td></td>
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                                <td></td><td class="avail"></td><td></td><td class="avail"></td><td></td>
+                            </tr>
+                            <tr> <!--6 pm-->
+                                <td></td><td class="avail"></td><td></td><td class="avail"></td><td></td>
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                                <td></td><td class="avail"></td><td></td><td class="avail"></td><td></td>
                             </tr>
                         </table>
                     </div>
@@ -124,6 +127,11 @@
             
             <div id="group" class="avail_card">
                 Group Availability
+                <div id="group_avail_legend">
+                   0/4 Available
+                    <table><tr><td class="none"></td><td class="one"></td><td class="two"></td><td class="three"></td><td class="four"></td></tr></table>
+                    4/4 Available
+                </div>
 
                 <div class="desc" role="describe usage">Click a card to see availability. Scroll to see more dates</div>
 
@@ -146,67 +154,111 @@
                     <div class="date_matrix">
                         <table>
                             <tr>
-                                <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                            </tr>
+                            <tr> <!--9am-->
+                                <td rowspan="2"><button class="event_button one"></button></td>
+                                <td rowspan="8"><button class="event_button three"></button></td>
+                                <td></td>
+                                <td rowspan="8"><button class="event_button one"></button></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr> <!--10 am-->
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr> <!--11 am-->
+                                <td rowspan="4"><button class="event_button two"></button></td>
+                                <td rowspan="4"><button class="event_button three"></button></td>
+                                <td class="one"></td>
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                               <td rowspan="2"><button class="event_button two"></button></td>
+                            </tr>
+                            <tr> <!--12 pm-->
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                                <td class="one"></td>
+                            </tr>
+                            <tr> <!--1 pm-->
+                                <td></td>
+                                <td></td>
+                                <td rowspan="1"><button class="event_button two"></button></td>
+                                <td rowspan="4"><button class="event_button two"></button></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr> <!--2 pm-->
+                                <td></td>
+                                <td rowspan="3"><button class="event_button two"></button></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr> <!--3 pm-->
+                                <td rowspan="4"><button class="event_button four"></button></td>
+                                <td rowspan="5"><button class="event_button two"></button></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr> <!--4 pm-->
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr> <!--5 pm-->
+                                <td></td><td rowspan="4"><button class="event_button four"></button></td>
+                                <td rowspan="1"><button class="event_button one"></button></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td rowspan="3"><button class="event_button three"></button></td>
+                                <td></td>
+                            </tr>
+                            <tr> <!--6 pm-->
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
-                            </tr>
-                            <tr>
-                                <td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </table>
                     </div>
