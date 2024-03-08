@@ -79,15 +79,16 @@ td{
 .samples{
     display: flex;
     flex-direction: row;
-    font-size: 10px;
+    font-size: 14px;
     align-items: center;
     margin-top: .8vh;
+    height: 26px;
     table{
         table-layout:fixed;
         margin-right: .25vw;
     }
     tr{
-        height:16px;
+        height:20px;
     }
     td{
         width: 30px;
@@ -132,7 +133,7 @@ td{
 }
 
 .desc{
-    font-size: 10px;
+    font-size: 14px;
     margin-top: 1vh;
 }
 
@@ -148,7 +149,7 @@ td{
     }
     p {
         margin: 0px 0px 0px 0px;
-        font-size: 8pt;
+        font-size: 12pt;
     }
 }
 
@@ -197,14 +198,16 @@ td{
 #group_avail_legend{
     display: flex;
     flex-direction: row;
-    font-size: 8pt;
+    font-size: 14pt;
     align-items: center;
     justify-content: space-between;
-    width: 95%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 400px;
     margin-top: .8vh;
     table{
         /* border-collapse: collapse; */
+        border-top: 0;
+        border-bottom: 0;
         table-layout:fixed;
         width: 160px; 
     }
@@ -276,7 +279,7 @@ td{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
     #logo_bar{
         h1{
             text-align: center;
